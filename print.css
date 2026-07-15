@@ -1,0 +1,25 @@
+@page {
+  size: A4;
+  margin: 22mm 18mm 24mm;
+  @bottom-center { content: "MADAR Architecture Book · Page " counter(page); }
+}
+
+:root { color-scheme: light; }
+* { box-shadow: none !important; text-shadow: none !important; }
+html { scroll-behavior: auto; }
+body { background: #fff !important; color: #111827 !important; font-size: 10.5pt; }
+.site-header, .sidebar, .reading-progress, .nav-toggle, .skip-link, .site-footer { display: none !important; }
+.book-shell { display: block; }
+.content { width: 100%; padding: 0; }
+.cover-page, .doc-section, .chapter { page-break-inside: avoid; break-inside: avoid; margin: 0 0 12mm; padding: 0; border: 0; background: transparent; }
+.cover-page { min-height: 245mm; page-break-after: always; break-after: page; }
+.chapter { page-break-before: always; break-before: page; }
+h1, h2, h3 { color: #0f172a; page-break-after: avoid; break-after: avoid; }
+a { color: #111827; }
+.data-table, th, td { border-color: #cbd5e1; }
+th { background: #f8fafc !important; }
+.figure-card, .code-block, .callout { border-color: #cbd5e1; background: #fff !important; page-break-inside: avoid; break-inside: avoid; }
+.diagram-container { min-height: 80mm; background: #f8fafc !important; border: 1px dashed #94a3b8; }
+.print-only { display: block; }
+.print-header { position: running(printHeader); }
+.print-footer { position: running(printFooter); }
