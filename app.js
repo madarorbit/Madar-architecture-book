@@ -28,6 +28,15 @@ tocLinks.forEach((link) => link.addEventListener('click', () => {
   navToggle?.setAttribute('aria-expanded', 'false');
 }));
 
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && sidebar?.dataset.open === 'true') {
+    sidebar.dataset.open = 'false';
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.focus();
+  }
+});
+
 window.addEventListener('scroll', updateReadingProgress, { passive: true });
 window.addEventListener('resize', updateReadingProgress);
 updateReadingProgress();

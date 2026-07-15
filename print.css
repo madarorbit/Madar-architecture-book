@@ -1,25 +1,3 @@
-@page {
-  size: A4;
-  margin: 22mm 18mm 24mm;
-  @bottom-center { content: "MADAR Architecture Book · Page " counter(page); }
-}
-
-:root { color-scheme: light; }
-* { box-shadow: none !important; text-shadow: none !important; }
-html { scroll-behavior: auto; }
-body { background: #fff !important; color: #111827 !important; font-size: 10.5pt; }
-.site-header, .sidebar, .reading-progress, .nav-toggle, .skip-link, .site-footer { display: none !important; }
-.book-shell { display: block; }
-.content { width: 100%; padding: 0; }
-.cover-page, .doc-section, .chapter { page-break-inside: avoid; break-inside: avoid; margin: 0 0 12mm; padding: 0; border: 0; background: transparent; }
-.cover-page { min-height: 245mm; page-break-after: always; break-after: page; }
-.chapter { page-break-before: always; break-before: page; }
-h1, h2, h3 { color: #0f172a; page-break-after: avoid; break-after: avoid; }
-a { color: #111827; }
-.data-table, th, td { border-color: #cbd5e1; }
-th { background: #f8fafc !important; }
-.figure-card, .code-block, .callout { border-color: #cbd5e1; background: #fff !important; page-break-inside: avoid; break-inside: avoid; }
-.diagram-container { min-height: 80mm; background: #f8fafc !important; border: 1px dashed #94a3b8; }
-.print-only { display: block; }
-.print-header { position: running(printHeader); }
-.print-footer { position: running(printFooter); }
+@page { size:A4; margin:20mm 17mm 24mm; @top-left{content:"MADAR Architecture Book"} @bottom-center{content:"Page " counter(page) " of " counter(pages)} @bottom-right{content:"Confidential"} }
+:root{color-scheme:light;--text:#111827;--muted:#475569;--line:#cbd5e1;--accent:#0f766e;--accent-2:#4c1d95}
+*{box-shadow:none!important;text-shadow:none!important} html{scroll-behavior:auto} body{background:#fff!important;color:#111827!important;font:10.5pt/1.5 ui-sans-serif,system-ui,sans-serif}.site-header,.sidebar,.reading-progress,.nav-toggle,.skip-link,.site-footer{display:none!important}.book-shell{display:block}.content{width:100%;padding:0}.cover-page,.doc-section,.chapter{break-inside:avoid;page-break-inside:avoid;margin:0 0 10mm;padding:0;border:0;background:transparent}.cover-page{min-height:245mm;break-after:page;page-break-after:always}.chapter{break-before:page;page-break-before:always}h1,h2,h3{color:#0f172a;break-after:avoid;page-break-after:avoid}h1{font-size:42pt}h2{font-size:24pt}h3{font-size:16pt}.brand-logo{print-color-adjust:exact;-webkit-print-color-adjust:exact}.metadata-grid,.metadata-grid-cover{grid-template-columns:repeat(2,1fr)}.metadata-grid div,.data-table,.figure-card,.code-block,.callout,.quote-card,.timeline,.checklist{border-color:#cbd5e1!important;background:#fff!important;break-inside:avoid;page-break-inside:avoid}.data-table{border-collapse:collapse}th{background:#f8fafc!important;color:#0f172a}th,td{border-color:#cbd5e1}.diagram-container{min-height:80mm;background:#f8fafc!important;border:1px dashed #94a3b8}.print-only{display:block}.print-header{position:running(printHeader)}.print-footer{position:running(printFooter)}a{color:#111827;text-decoration:none}

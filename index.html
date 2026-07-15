@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="MADAR Architecture Book engineering documentation skeleton.">
+  <meta name="description" content="MADAR Architecture Book enterprise documentation interface.">
   <title>MADAR Architecture Book</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="print.css" media="print">
@@ -13,113 +13,82 @@
   <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
 
   <header class="site-header" role="banner">
-    <div class="brand-lockup" aria-label="MADAR Architecture Book">
-      <div class="brand-mark" aria-hidden="true">M</div>
-      <div>
-        <p class="eyebrow">MADAR ORBIT</p>
-        <strong>Architecture Book</strong>
-      </div>
+    <a class="brand-lockup" href="#cover" aria-label="MADAR Architecture Book cover">
+      <span class="brand-logo" aria-hidden="true"><span></span></span>
+      <span><span class="eyebrow">MADAR ORBIT</span><strong>Architecture Book</strong></span>
+    </a>
+    <div class="header-actions">
+      <span class="status-pill">Phase 02</span>
+      <button class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
     </div>
-    <button class="nav-toggle" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
   </header>
 
   <div class="book-shell">
     <aside class="sidebar" id="sidebar" aria-label="Book navigation">
+      <div class="sidebar-brand">
+        <span class="brand-logo brand-logo-large" aria-hidden="true"><span></span></span>
+        <div><p class="eyebrow">MADAR ORBIT</p><strong>Engineering Handbook</strong></div>
+      </div>
+      <label class="search-box"><span>Search</span><input type="search" placeholder="Search chapters" aria-label="Search chapters"></label>
       <nav class="toc" aria-labelledby="toc-title">
         <h2 id="toc-title">Contents</h2>
-        <ol>
-          <li><a href="#cover">Cover</a></li>
-          <li><a href="#metadata">Document Metadata</a></li>
-          <li><a href="#revision-history">Revision History</a></li>
-          <li><a href="#chapter-template">Chapter Template</a></li>
-          <li><a href="#component-system">Component System</a></li>
-          <li><a href="#print-system">Print System</a></li>
-        </ol>
+        <details open><summary>Foundation</summary><ol>
+          <li><a href="#cover">Cover</a></li><li><a href="#metadata">Document Metadata</a></li><li><a href="#revision-history">Revision History</a></li>
+        </ol></details>
+        <details open><summary>System</summary><ol>
+          <li><a href="#chapter-template">Chapter Template</a></li><li><a href="#component-system">Component Library</a></li><li><a href="#typography-system">Typography System</a></li><li><a href="#print-system">Print System</a></li>
+        </ol></details>
       </nav>
-      <footer class="version-footer">Document v1.0 · Phase 01</footer>
+      <footer class="version-footer"><span>Version v1.0</span><span>Design System Ready</span></footer>
     </aside>
 
     <main class="content" id="content" tabindex="-1">
       <section class="cover-page" id="cover" aria-labelledby="cover-title">
+        <div class="cover-mark"><span class="brand-logo brand-logo-hero" aria-hidden="true"><span></span></span></div>
         <p class="eyebrow">Official Internal Engineering Documentation</p>
         <h1 id="cover-title">MADAR Architecture Book</h1>
-        <dl class="metadata-grid" aria-label="Document summary">
-          <div><dt>Project</dt><dd>MADAR Architecture Book</dd></div>
-          <div><dt>Phase</dt><dd>01 — Architecture Book Skeleton</dd></div>
-          <div><dt>Version</dt><dd>v1.0</dd></div>
-          <div><dt>Status</dt><dd>Framework Ready</dd></div>
+        <p class="document-subtitle">Enterprise engineering handbook visual framework.</p>
+        <dl class="metadata-grid metadata-grid-cover" aria-label="Document summary">
+          <div><dt>Version</dt><dd></dd></div><div><dt>Revision</dt><dd></dd></div><div><dt>Status</dt><dd><span class="badge badge-info">Framework Ready</span></dd></div><div><dt>Classification</dt><dd></dd></div><div><dt>Date</dt><dd></dd></div><div><dt>Author</dt><dd></dd></div><div><dt>Document ID</dt><dd></dd></div><div><dt>Confidentiality</dt><dd></dd></div>
         </dl>
       </section>
 
       <section class="doc-section" id="metadata" aria-labelledby="metadata-title">
-        <header class="section-header">
-          <p class="section-kicker">Governance</p>
-          <h2 id="metadata-title">Document Metadata</h2>
-        </header>
-        <table class="data-table">
-          <caption>Controlled document fields for future maintainers.</caption>
-          <tbody>
-            <tr><th scope="row">Author</th><td data-field="author"></td></tr>
-            <tr><th scope="row">Company</th><td>MADAR</td></tr>
-            <tr><th scope="row">Status</th><td>Framework Ready</td></tr>
-            <tr><th scope="row">Last Updated</th><td data-field="last-updated"></td></tr>
-          </tbody>
-        </table>
+        <header class="section-header"><p class="section-kicker">Governance</p><h2 id="metadata-title">Document Metadata</h2><p class="section-description"></p></header>
+        <table class="data-table"><caption>Controlled document fields for future maintainers.</caption><tbody>
+          <tr><th scope="row">Company Logo</th><td><span class="brand-logo table-logo" aria-label="MADAR ORBIT logo"><span></span></span></td></tr>
+          <tr><th scope="row">Author</th><td data-field="author"></td></tr><tr><th scope="row">Status</th><td><span class="badge badge-success">Ready</span></td></tr><tr><th scope="row">Last Updated</th><td data-field="last-updated"></td></tr>
+        </tbody></table>
       </section>
 
       <section class="doc-section" id="revision-history" aria-labelledby="revision-title">
-        <header class="section-header">
-          <p class="section-kicker">Change Control</p>
-          <h2 id="revision-title">Revision History</h2>
-        </header>
-        <table class="data-table">
-          <thead><tr><th>Version</th><th>Date</th><th>Owner</th><th>Summary</th></tr></thead>
-          <tbody><tr><td>v1.0</td><td></td><td></td><td>Architecture book skeleton established.</td></tr></tbody>
-        </table>
+        <header class="section-header"><p class="section-kicker">Change Control</p><h2 id="revision-title">Revision History</h2></header>
+        <table class="data-table"><thead><tr><th>Version</th><th>Date</th><th>Owner</th><th>Status</th><th>Summary</th></tr></thead><tbody><tr><td>v1.0</td><td></td><td></td><td><span class="badge">Baseline</span></td><td></td></tr></tbody></table>
       </section>
 
       <article class="chapter" id="chapter-template" aria-labelledby="chapter-title">
-        <header class="chapter-header">
-          <p class="chapter-number">Chapter 00</p>
-          <h2 id="chapter-title">Chapter Layout Template</h2>
-        </header>
-        <section class="doc-section" aria-labelledby="section-template-title">
-          <h3 id="section-template-title">Section Layout Template</h3>
-          <div class="component-grid">
-            <figure class="figure-card">
-              <div class="diagram-container" role="img" aria-label="Reserved diagram container"></div>
-              <figcaption>Figure caption area.</figcaption>
-            </figure>
-            <pre class="code-block"><code>// Code block component</code></pre>
-          </div>
+        <header class="chapter-header"><p class="chapter-number">Chapter 00</p><h2 id="chapter-title">Chapter Layout Template</h2><p class="chapter-summary"></p></header>
+        <section class="doc-section compact" aria-labelledby="section-template-title"><h3 id="section-template-title">Section Layout Template</h3>
+          <div class="component-grid"><figure class="figure-card"><div class="diagram-container" role="img" aria-label="Reserved diagram container"></div><figcaption>Figure caption area.</figcaption></figure><pre class="code-block"><code>// Code block component</code></pre></div>
         </section>
       </article>
 
       <section class="doc-section" id="component-system" aria-labelledby="components-title">
-        <header class="section-header">
-          <p class="section-kicker">Reusable Components</p>
-          <h2 id="components-title">Documentation Components</h2>
-        </header>
-        <div class="callout info" role="note"><strong>Information</strong><span></span></div>
-        <div class="callout warning" role="note"><strong>Warning</strong><span></span></div>
-        <div class="callout architecture" role="note"><strong>Architecture Note</strong><span></span></div>
+        <header class="section-header"><p class="section-kicker">Reusable Components</p><h2 id="components-title">Documentation Components</h2></header>
+        <div class="component-stack">
+          <div class="callout info" role="note"><strong>Information Box</strong><span></span></div><div class="callout warning" role="note"><strong>Warning Box</strong><span></span></div><div class="callout success" role="note"><strong>Success Box</strong><span></span></div><div class="callout danger" role="note"><strong>Danger Box</strong><span></span></div><div class="callout architecture" role="note"><strong>Architecture Note</strong><span></span></div><div class="callout decision" role="note"><strong>Decision Box</strong><span></span></div>
+          <blockquote class="quote-card"><p></p><cite>Reference</cite></blockquote>
+          <div class="timeline"><div><span></span><strong>Timeline Item</strong><p></p></div></div>
+          <ul class="checklist"><li><span aria-hidden="true"></span>Checklist item</li></ul>
+        </div>
       </section>
 
-      <section class="doc-section" id="print-system" aria-labelledby="print-title">
-        <header class="section-header">
-          <p class="section-kicker">Publishing</p>
-          <h2 id="print-title">Print and PDF System</h2>
-        </header>
-        <div class="print-only print-header">MADAR Architecture Book</div>
-        <div class="print-only print-footer">Confidential Internal Engineering Reference</div>
-      </section>
+      <section class="doc-section" id="typography-system" aria-labelledby="type-title"><header class="section-header"><p class="section-kicker">Reading Experience</p><h2 id="type-title">Typography System</h2></header><div class="type-spec"><p>Paragraph style</p><p class="metadata-text">Metadata style</p><p><code>Inline code style</code></p><small>Footnote style</small></div></section>
+      <section class="doc-section" id="print-system" aria-labelledby="print-title"><header class="section-header"><p class="section-kicker">Publishing</p><h2 id="print-title">Print and PDF System</h2></header><div class="print-only print-header"><span class="brand-logo print-logo"><span></span></span> MADAR Architecture Book</div><div class="print-only print-footer">Confidential Internal Engineering Reference</div></section>
     </main>
   </div>
 
-  <footer class="site-footer" role="contentinfo">
-    <span>MADAR Architecture Book</span>
-    <span>v1.0</span>
-  </footer>
+  <footer class="site-footer" role="contentinfo"><span>MADAR Architecture Book</span><span>v1.0</span></footer>
   <script src="app.js" defer></script>
 </body>
 </html>

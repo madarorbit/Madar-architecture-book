@@ -4,9 +4,9 @@ Official internal engineering documentation framework for the MADAR Architecture
 
 ## Phase
 
-**01 — Architecture Book Skeleton**
+**02 — Design System & User Experience Foundation**
 
-This repository currently provides the reusable structure, layout system, styling foundation, print foundation, and interaction layer for future Architecture Book content. It intentionally does not include chapter prose, invented company details, generated diagrams, screenshots, or placeholder paragraphs.
+This repository currently provides the reusable structure, enterprise visual design system, dark-theme interface, responsive navigation, component library, print foundation, and interaction layer for future Architecture Book content. It intentionally does not include chapter prose, invented company details, generated diagrams, screenshots, or placeholder paragraphs.
 
 ## Architecture Decisions
 
@@ -43,6 +43,6 @@ This repository currently provides the reusable structure, layout system, stylin
 5. Update print behavior whenever adding a new visual pattern.
 6. Avoid placeholder prose; empty fields are preferable to misleading content.
 
-## Phase 02 Readiness
+## Phase 03 Readiness
 
-The repository is ready for future teams to add controlled chapter content, asset governance, diagram standards, and optional build tooling when the documentation scale requires it.
+The repository is ready for future teams to add controlled chapter content, asset governance, diagram standards, and optional build tooling when the documentation scale requires it. The Phase 02 visual framework is intentionally content-neutral and reusable across future chapters.
